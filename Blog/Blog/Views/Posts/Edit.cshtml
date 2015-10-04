@@ -1,0 +1,24 @@
+﻿@model Blog.Models.Post
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<form action="@Href("~/Posts/Update")" method = "post" id="postForm">
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+
+    @if (Model.Id != -1)
+    {
+        <input type="hidden" name="id" value="@Model.Id"/>        
+    }
+    @{ DateTime dateTime = Model.DateTime.Year > 2000 ? Model.DateTime : DateTime.Now;}
+    <input type="text" name="DateTime" value="@dateTime"/> Date<br/>
+    <input type="text" name="Title" value="@Model.Title" /> Title<br />
+    <input type="text" name="Tags" value="@ViewBag.Tags" /> Tags <br />
+    <textarea name="Body" rows="10" cols="80" value="@Model.Body" >@Model.Body</textarea><br />
+    <input type="submit" name="submit" value="Добавить"/>
+
+</form>
+<h2>Edit</h2>

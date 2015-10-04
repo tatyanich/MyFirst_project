@@ -1,0 +1,16 @@
+﻿@model Blog.Models.Administrator
+
+@{
+    ViewBag.Title = "Login";
+}
+
+
+
+<h2>Login</h2>
+@using(Html.BeginForm())
+{
+    @Html.EditorFor(m => m.Name, "Name")<br />
+    @Html.EditorFor(m => m.Password, "Password")<br/>
+    <input type="submit" value="Login" />
+}
+

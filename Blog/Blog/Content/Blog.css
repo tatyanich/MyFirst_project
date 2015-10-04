@@ -1,0 +1,177 @@
+﻿body {
+    margin:0;
+    padding:0;
+    width: 100%;
+    color: #303030;
+    text-align:center;
+    font-family: Verdana,Tahoma,"Trebuchet MS",sans-serif;
+    font-size:14px;
+    background-image: url('/Content/Images/darkbackground.png');
+}
+#header{
+    padding: 1%;
+      margin-right: 170px;
+}
+#footer{
+    padding: 10px;
+    color: #808080;
+}
+
+.separator{
+    clear: both;
+    height: 8px;
+    background-image:url('/Content/Images/separator.png');
+}
+
+#topSeparator{
+    margin-bottom: 20px;
+}
+
+#bottomSeparator{
+    margin-top:20px;
+
+}
+#content{
+    background-image:url('/Content/Images/background.png');
+}
+img{
+    border: 0;
+}
+
+.postTitle{
+    margin: auto;
+    text-align: left;
+    width: 615px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family:"Palatino Linotype", palatino;
+    padding-left:85px;
+}
+.postTitle a:link, .postTitle a:visited, .postTitle a:hover, .postTitle a:active{
+    color: #303030;
+    text-decoration:none;
+}
+.postTitle a:hover{
+    text-decoration: uderline;
+}
+.postContainer{
+    width: 700px;
+    margin: 0 auto 50px auto;
+}
+.postTabs{
+    color: #ffffff;
+    float: left;
+    font-size: 12px;
+}
+.dateTab{
+    margin-top:20px;
+    width: 60px;
+    padding:5px;
+    background: #303030;
+
+}
+.month {
+
+
+}
+.day{
+    font-size: 2em;
+}
+
+.commentsTab{
+    margin-top:20px;
+    width: 60px;
+    padding:5px;
+    background: #217aa6;
+}
+
+.commentsTab img{
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.commentsTab a:link, .commentsTab a:visited, .commentsTab a:hover, .commentsTab a:active{
+    color: #ffffff;
+    text-decoration:none;
+}
+.commentsTab a:hover{
+    text-decoration: underline;
+}
+.postContent{
+    padding:15px 15px 15px 50px;
+    width: 600px;
+    margin-left: 35px;
+    color:#000000;
+    background-color:#ffffff;
+}
+.postBody {
+text-align: left;
+line-height: 1.5em;;
+}
+.tagList{
+    float:left;
+}
+.tag {
+
+}
+.linkList{
+    text-align: right;
+}
+
+.postControlPanel{
+
+}
+
+.comment {
+text-align:left;
+color: #000000;
+background:#ffffff;
+padding:15px 15px 15px 10px;
+margin-bottom: 30px;
+}
+#commentEditor  {
+  color: #000000;
+  padding: 15px 15px 15px 50px;
+  margin-bottom: 30px;
+}
+#commentPrompt{
+
+color: #000000;
+
+
+}
+
+#commentContainer{
+
+    width:665px;
+    margin:auto;
+    padding-left:35px;
+}
+.commentName{
+    font-style:italic;
+
+}
+.commentBody {
+    margin: 5px;
+}
+.commentTime{
+    font-style: italic;
+    text-align:right;
+    font-size: 10px;
+}
+.commentControlPanel{
+
+}
+#sidebar{
+    float: right;
+    margin-right: 15px;
+    width:300px;
+    margin-top: 50px;
+}
+
+#main{
+    margin-right: 230px;
+}
+
+#portrait{
+    margin:10px 0 10px 0;
+}

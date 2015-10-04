@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Blog.css")" rel="stylesheet" type="text/css"/>
+    <script src="@Url.Content("~/Scripts/JQuery.js")" type="text/javascript"></script> />
+    
+        @RenderSection("ExtraHeaders",false)
+</head>
+<body>
+    <div id="header">
+        <a href="@Href("~/")"><img src="@Href("~/Content/Images/title.png")" alt="Tatiana Matiunina"/></a>
+    </div>
+    <div id="content">
+        <div id="topSeparator" class="separator"></div>
+        <div id="sidebar">
+            <img id="portrait" src="@Href("~/Content/Images/P106083577.jpg")" alt="Tatiana Matiunina" />
+        </div>
+        <div id="main">@RenderBody()</div>
+        <div id="bottomSeparator" class="separator"></div>
+        
+    </div>
+    <div id="footer">
+        
+        <div id="copyright">Copyright &copy; 2015 Tatiana's Blog</div>
+
+            @if(ViewBag.IsAdmin ?? false){
+                <div class="controlPanel">
+                    <a href="@Href("~/Posts/Edit")">New Post</a>
+                    <a href="@Href("~/Account/Logout")">Logout</a>
+                </div>
+            
+            }
+            else
+            {
+                <div class="controlPanel">
+                    <a href="@Href("~/Account/Login")">Login</a> 
+                </div>
+            }
+     </div>
+</body>
+</html>
